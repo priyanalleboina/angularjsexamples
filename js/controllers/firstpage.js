@@ -4,7 +4,7 @@ angular.module('myapp')
     
    $scope.getCountriesData=function(){
 	  
-	myservice.get("http://shamba.shambadigital.com/Shamba/county").then(function(resp){
+	myservice.get("countries.json").then(function(resp){
 				if(resp.status=="success"){
 					
 				$scope.countriesList=angular.copy(resp.result);
@@ -18,7 +18,7 @@ angular.module('myapp')
    };
    
    $scope.getOrgData = function(){
-			myservice.get("http://62.12.118.38/Shamba/orgList").then(function(resp){
+			myservice.get("orglist.json").then(function(resp){
 				if(resp.status=="success"){
 					
 				$scope.organisationList=angular.copy(resp.result);
