@@ -1,0 +1,23 @@
+<div class="wrapper">
+    <mynavbar></mynavbar>
+    <div id="content">
+    <toggledir></toggledir>
+      <div class="col-md-offset-3 col-md-6">
+            <div ng-init="getCountriesData()"> 
+                <form>
+                          
+                      <div class="form-group" >
+                          <label for="sel1">Select list (select one):</label>
+                          <select class="form-control" id="sel1" ng-model="country1" ng-change="changedfun()"
+                          ng-options="country1.countyName for country1 in countriesList" value="{{country.id}}"></select>
+                      
+                      <select class="form-control" ng-disabled="!country1"  ng-model="constitution" ng-change="select1()" 
+                      ng-options="y.constitutionName for y in second"></select>
+              <br>
+              <select class="form-control" ng-disabled="!constitution" ng-model="wards" ng-options="b.wardName for b in b.wards"></select>
+                          </div>
+                      </form>
+              </div>
+            </div>
+        </div>
+    </div>

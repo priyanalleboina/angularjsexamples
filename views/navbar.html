@@ -1,0 +1,53 @@
+<div class="wrapper">
+<nav id="sidebar">
+  <div class="sidebar-header">
+      <h3>{{cmpnyname}}</h3>
+      <img src={{image}}  id="logo" width="160px" height="80px">
+  </div>
+  <ul class="list-unstyled components">
+      
+      <li class="active">
+          <a href="" data-target="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Home</a>
+          <ul class="collapse list-unstyled" id="homeSubmenu">
+              <li><a href="">Home 1</a></li>
+              <li><a href="">Home 2</a></li>
+              <li><a href="">Home 3</a></li>
+          </ul>
+      </li>
+      <li>
+          <a ui-sref="signup">signup</a>
+          <a href="" data-target="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Pages</a>
+          <ul class="collapse list-unstyled" id="pageSubmenu">
+              <li><a href="">Page 1</a></li>
+              <li><a href="">Page 2</a></li>
+              <li><a href="">Page 3</a></li>
+          </ul>
+      </li>
+      <li>
+          <a ui-sref="dashboard">dashboard</a>
+      </li>
+      <li>
+          <a ui-sref="watchers">watchers</a>
+      </li>
+      <li>
+            <a ui-sref="dropdowns">dropdowns</a>
+        </li>
+        <li>
+             <a ui-sref="datatable">datatable</a>
+        </li>
+        <li>
+                <a ui-sref="filter">filter</a>
+           </li>
+        <li>
+                <a ui-sref="charts">charts</a>
+            </li>
+      <li>
+        <a href="">{{name}}</a>
+      </li>
+      <li>
+            <a ui-sref="imageupload">imageupload</a>
+        </li>
+  </ul>
+
+  
+</nav>
