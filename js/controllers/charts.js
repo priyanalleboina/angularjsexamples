@@ -46,7 +46,7 @@ angular.module("myapp").controller("chartsctrl",['$scope','myfactory','myservice
     //     ]
     //   });
       
-   myservice.get("http://shamba.shambadigital.com/Shamba/county").then(function(resp){
+   myservice.get("countries.json").then(function(resp){
    if(resp.status=="success"){
    
    $scope.countriesList=angular.copy(resp.result);
